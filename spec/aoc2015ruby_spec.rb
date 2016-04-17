@@ -1,5 +1,5 @@
 require 'spec_helper'
-require 'aoc2015ruby/day01solution'
+require 'day01'
 
 describe Aoc2015ruby do
   it 'has a version number' do
@@ -10,7 +10,6 @@ describe Aoc2015ruby do
   #   expect(false).to eq(true)
   # end
 
-  it 'has solution for Day01' do
-  	expect(Aoc2015ruby::solveDay01a).not_to be nil
-  end
+  it 'Day01: knows Santa is on Floor 74'          do expect(Day01.solve1).to eq(74) end
+  it 'Day01: knows first reaches basement @ 1795' do expect(Day01.solve2).to eq(1795) end
 end
