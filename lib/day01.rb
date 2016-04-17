@@ -9,13 +9,10 @@ class Day01
   def self.solve2
     line = readInput
     floor = 0
-    answer = -1
     line.split("").each_with_index do |c, i|
       floor += (c == '(') ? 1 : -1
-      answer = i + 1
-      break if floor == -1
+      return i + 1 if floor == -1
     end
-    answer
   end
 
   def self.readInput
