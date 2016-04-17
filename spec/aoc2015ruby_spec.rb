@@ -9,7 +9,7 @@ describe Aoc2015ruby do
   # it 'does something useful' do
   #   expect(false).to eq(true)
   # end
-
+  puts Dir.pwd
   it 'Day01: knows Santa is on Floor 74'          do expect(Day01.solve1).to eq(74) end
   it 'Day01: knows first reaches basement @ 1795' do expect(Day01.solve2).to eq(1795) end
 end
