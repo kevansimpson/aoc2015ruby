@@ -1,14 +1,17 @@
 require 'spec_helper'
-require 'day01'
+Dir[Dir.pwd + "/**/day*.rb"].each { |f| require f }
+
+# # load all days' solutions
+# Dir[File.dirname('lib') + '/day*.rb'].each { |file| require file }
 
 describe Aoc2015ruby do
   it 'has a version number' do
     expect(Aoc2015ruby::VERSION).not_to be nil
   end
 
-  # it 'does something useful' do
-  #   expect(false).to eq(true)
-  # end
   it 'Day01: knows Santa is on Floor 74'          do expect(Day01.solve1).to eq(74) end
   it 'Day01: knows first reaches basement @ 1795' do expect(Day01.solve2).to eq(1795) end
+
+  it 'Day02: Elves should order 1588178 sq.ft. of wrapping paper' do expect(Day02.solve1).to eq(1588178) end
+  it 'Day02: Elves should order 3783758 of ribbon'                do expect(Day02.solve2).to eq(3783758) end
 end
