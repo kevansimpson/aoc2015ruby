@@ -14,4 +14,8 @@ describe Aoc2015ruby do
 
   it 'Day02: Elves should order 1588178 sq.ft. of wrapping paper' do expect(Day02.solve1).to eq(1588178) end
   it 'Day02: Elves should order 3783758 of ribbon'                do expect(Day02.solve2).to eq(3783758) end
+
+  it 'Day03: The # of houses which receive 1+ present is 2081' do expect(Day03.solve1).to eq(2081) end
+  it 'Day03: The # of houses which receive 1+ present is 2341' do expect(Day03.solve2).to eq(2341) end
+
 end
