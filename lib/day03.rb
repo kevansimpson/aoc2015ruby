@@ -3,12 +3,12 @@
 require 'set'
 class Day03
   def self.solve1
-    santa = followDirections(readInput.split(""))
+    santa = followDirections(readInput)
     santa.size
   end
 
   def self.solve2
-    left,right = readInput.split("").partition.each_with_index{ |el, i| i.even? }
+    left,right = readInput.partition.each_with_index{ |el, i| i.even? }
     santa = followDirections(left)
     robot = followDirections(right)
     (santa | robot).size
@@ -19,16 +19,11 @@ class Day03
     (x, y) = [0, 0]
     deliverPresent(visitedHouses, x, y)
     directions.each do |ch|
-      case ch
-        when '^'
-          (x, y) = deliverPresent(visitedHouses, x, 1 + y)
-        when 'v'
-          (x, y) = deliverPresent(visitedHouses, x, y - 1)
-        when '<'
-          (x, y) = deliverPresent(visitedHouses, x - 1, y)
-        when '>'
-          (x, y) = deliverPresent(visitedHouses, 1 + x, y)
-      end
+      y += 1 if ch == '^'
+      y -= 1 if ch == 'v'
+      x += 1 if ch == '>'
+      x -= 1 if ch == '<'
+      (x, y) = deliverPresent(visitedHouses, x, y)
     end
     visitedHouses
   end
@@ -40,6 +35,6 @@ class Day03
   end
 
   def self.readInput
-    File.readlines('lib/input/day03input.txt')[0] #.map {|x| x.chomp.split("x").map(&:to_i).sort }
+    File.readlines('lib/input/day03input.txt')[0].split("")
   end
 end
