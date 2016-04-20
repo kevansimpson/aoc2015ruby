@@ -5,9 +5,7 @@ Dir[Dir.pwd + "/**/day*.rb"].each { |f| require f }
 # Dir[File.dirname('lib') + '/day*.rb'].each { |file| require file }
 
 describe Aoc2015ruby do
-  it 'has a version number' do
-    expect(Aoc2015ruby::VERSION).not_to be nil
-  end
+  it 'has a version number' do expect(Aoc2015ruby::VERSION).not_to be nil end
 
   it 'Day01: knows Santa is on Floor 74'          do expect(Day01.solve1).to eq(74) end
   it 'Day01: knows first reaches basement @ 1795' do expect(Day01.solve2).to eq(1795) end
@@ -20,5 +18,8 @@ describe Aoc2015ruby do
 
   it 'Day04: First hash with prefix "00000" is 254575'    do expect(Day04.solve('00000')).to eq(254575) end
   it 'Day04: Second hash with prefix "000000" is 1038736' do expect(Day04.solve('000000')).to eq(1038736) end
+
+  it 'Day05: Number of "good" words: 258'                   do expect(Day05.solve1).to eq(258) end
+  it 'Day05: Number of "good" words with better model: 53'  do expect(Day05.solve2).to eq(53) end
 
 end
