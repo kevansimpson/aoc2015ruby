@@ -22,4 +22,7 @@ describe Aoc2015ruby do
   it 'Day05: Number of "good" words: 258'                   do expect(Day05.solve1).to eq(258) end
   it 'Day05: Number of "good" words with better model: 53'  do expect(Day05.solve2).to eq(53) end
 
+  it 'Day06: There are 543903 lights on'        do expect(Day06.solve1).to eq(543903) end
+  it 'Day06: The total brightness is 14687245'  do expect(Day06.solve2).to eq(14687245) end
+
 end
