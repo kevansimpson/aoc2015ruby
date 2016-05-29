@@ -25,4 +25,7 @@ describe Aoc2015ruby do
   it 'Day06: There are 543903 lights on'        do expect(Day06.solve1).to eq(543903) end
   it 'Day06: The total brightness is 14687245'  do expect(Day06.solve2).to eq(14687245) end
 
+  it 'Day07: The signal provided to a is 46065'             do expect(Day07.solve1).to eq(46065) end
+  it 'Day07: The signal to a after override to b is 14134'  do expect(Day07.solve2).to eq(14134) end
+
 end
