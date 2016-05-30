@@ -28,4 +28,7 @@ describe Aoc2015ruby do
   it 'Day07: The signal provided to a is 46065'             do expect(Day07.solve1).to eq(46065) end
   it 'Day07: The signal to a after override to b is 14134'  do expect(Day07.solve2).to eq(14134) end
 
+  it 'Day08: Total characters in memory is 1333'  do expect(Day08.solve1).to eq(1333) end
+  it 'Day08: Total encrypted characters is 2046'  do expect(Day08.solve2).to eq(2046) end
+
 end
