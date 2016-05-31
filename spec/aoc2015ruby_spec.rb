@@ -31,4 +31,7 @@ describe Aoc2015ruby do
   it 'Day08: Total characters in memory is 1333'  do expect(Day08.solve1).to eq(1333) end
   it 'Day08: Total encrypted characters is 2046'  do expect(Day08.solve2).to eq(2046) end
 
+  it 'Day09: The shortest path is 207'  do expect(Day09.solve1).to eq(207) end
+  it 'Day09: The longest path is 804'   do expect(Day09.solve2).to eq(804) end
+
 end
