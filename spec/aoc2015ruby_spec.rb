@@ -30,5 +30,7 @@ describe Aoc2015ruby do
   it 'Day09: The longest path is 804'   do expect(Day09.solve2).to eq(804) end
   it 'Day10: The length after 40 iterations is 492982'  do expect(Day10.solve1).to eq(492982) end
   it 'Day10: The length after 50 iterations is 6989950' do expect(Day10.solve2).to eq(6989950) end
+  it 'Day11: After vzbxkghb, the next password is vzbxxyzz' do expect(Day11.solve1).to eq('vzbxxyzz') end
+  it 'Day11: After vzbxxyzz, the next password is vzcaabcc' do expect(Day11.solve2).to eq('vzcaabcc') end
 
 end
