@@ -32,5 +32,7 @@ describe Aoc2015ruby do
   it 'Day10: The length after 50 iterations is 6989950' do expect(Day10.solve2).to eq(6989950) end
   it 'Day11: After vzbxkghb, the next password is vzbxxyzz' do expect(Day11.solve1).to eq('vzbxxyzz') end
   it 'Day11: After vzbxxyzz, the next password is vzcaabcc' do expect(Day11.solve2).to eq('vzcaabcc') end
+  it 'Day12: The sum of all numbers is 111754'  do expect(Day12.solve1).to eq(111754) end
+  it 'Day12: The sum of all numbers is 65402'   do expect(Day12.solve2).to eq(65402) end
 
 end
