@@ -15,9 +15,11 @@ describe Aoc2015ruby do
   it 'Day03: The # of houses which receive 1+ present is 2081' do expect(Day03.solve1).to eq(2081) end
   it 'Day03: The # of houses which receive 1+ present is 2341' do expect(Day03.solve2).to eq(2341) end
   it 'Day04: First hash with prefix "00000" is 254575'    do expect(Day04.solve('00000')).to eq(254575) end
+  # 4b takes too long
   it 'Day04: Second hash with prefix "000000" is 1038736' do expect(Day04.solve('000000')).to eq(1038736) end
   it 'Day05: Number of "good" words is 258'                   do expect(Day05.solve1).to eq(258) end
   it 'Day05: Number of "good" words with better model is 53'  do expect(Day05.solve2).to eq(53) end
+  # 6a+b both take too long
   it 'Day06: There are 543903 lights on'        do expect(Day06.solve1).to eq(543903) end
   it 'Day06: The total brightness is 14687245'  do expect(Day06.solve2).to eq(14687245) end
   it 'Day07: The signal provided to a is 46065'             do expect(Day07.solve1).to eq(46065) end
@@ -29,6 +31,7 @@ describe Aoc2015ruby do
   it 'Day09: The shortest path is 207'  do expect(Day09.solve1).to eq(207) end
   it 'Day09: The longest path is 804'   do expect(Day09.solve2).to eq(804) end
   it 'Day10: The length after 40 iterations is 492982'  do expect(Day10.solve1).to eq(492982) end
+  # 10b takes too long
   it 'Day10: The length after 50 iterations is 6989950' do expect(Day10.solve2).to eq(6989950) end
   it 'Day11: After vzbxkghb, the next password is vzbxxyzz' do expect(Day11.solve1).to eq('vzbxxyzz') end
   it 'Day11: After vzbxxyzz, the next password is vzcaabcc' do expect(Day11.solve2).to eq('vzcaabcc') end
@@ -36,8 +39,8 @@ describe Aoc2015ruby do
   it 'Day12: The sum of all numbers is 65402'   do expect(Day12.solve2).to eq(65402) end
   it 'Day13: The total change in happiness is 733'  do expect(Day13.solve1).to eq(733) end
   it 'Day13: The total change in happiness is 725'  do expect(Day13.solve2).to eq(725) end
-  # it 'Day14: The winning reindeer has traveled 2696 miles'  do expect(Day14.solve1).to eq(2696) end
-  # it 'Day14: The winning reindeer Rudolph has 1084 points'  do expect(Day14.solve2).to eq(1084) end
+  it 'Day14: The winning reindeer has traveled 2696 miles'  do expect(Day14.solve1).to eq(2696) end
+  it 'Day14: The winning reindeer Rudolph has 1084 points'  do expect(Day14.solve2).to eq(1084) end
   # # Week 3
   # it 'Day15: The highest cookie score is 18965440'                      do expect(Day15.solve1).to eq(18965440) end
   # it 'Day15: The highest score for the 500 calorie cookie is 15862900'  do expect(Day15.solve2).to eq(15862900) end
