@@ -42,8 +42,8 @@ describe Aoc2015ruby do
   it 'Day14: The winning reindeer has traveled 2696 miles'  do expect(Day14.solve1).to eq(2696) end
   it 'Day14: The winning reindeer Rudolph has 1084 points'  do expect(Day14.solve2).to eq(1084) end
   # # Week 3
-  # it 'Day15: The highest cookie score is 18965440'                      do expect(Day15.solve1).to eq(18965440) end
-  # it 'Day15: The highest score for the 500 calorie cookie is 15862900'  do expect(Day15.solve2).to eq(15862900) end
+  it 'Day15: The highest cookie score is 18965440'                      do expect(Day15.solve1).to eq(18965440) end
+  it 'Day15: The highest score for the 500 calorie cookie is 15862900'  do expect(Day15.solve2).to eq(15862900) end
   # it 'Day16: The index of Aunt Sue is 40'                                 do expect(Day16.solve1).to eq(40) end
   # it 'Day16: The index of Aunt Sue with outdated retroencabulator is 241' do expect(Day16.solve2).to eq(241) end
   # it 'Day17: Total permutations of cans is 1304'          do expect(Day17.solve1).to eq(1304) end
