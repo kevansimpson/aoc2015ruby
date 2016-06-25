@@ -24,7 +24,6 @@ describe Aoc2015ruby do
   it 'Day06: The total brightness is 14687245'  do expect(Day06.solve2).to eq(14687245) end
   it 'Day07: The signal provided to a is 46065'             do expect(Day07.solve1).to eq(46065) end
   it 'Day07: The signal to a after override to b is 14134'  do expect(Day07.solve2).to eq(14134) end
-
   # Week 2
   it 'Day08: Total characters in memory is 1333'  do expect(Day08.solve1).to eq(1333) end
   it 'Day08: Total encrypted characters is 2046'  do expect(Day08.solve2).to eq(2046) end
@@ -41,11 +40,11 @@ describe Aoc2015ruby do
   it 'Day13: The total change in happiness is 725'  do expect(Day13.solve2).to eq(725) end
   it 'Day14: The winning reindeer has traveled 2696 miles'  do expect(Day14.solve1).to eq(2696) end
   it 'Day14: The winning reindeer Rudolph has 1084 points'  do expect(Day14.solve2).to eq(1084) end
-  # # Week 3
+  # Week 3
   it 'Day15: The highest cookie score is 18965440'                      do expect(Day15.solve1).to eq(18965440) end
   it 'Day15: The highest score for the 500 calorie cookie is 15862900'  do expect(Day15.solve2).to eq(15862900) end
-  # it 'Day16: The index of Aunt Sue is 40'                                 do expect(Day16.solve1).to eq(40) end
-  # it 'Day16: The index of Aunt Sue with outdated retroencabulator is 241' do expect(Day16.solve2).to eq(241) end
+  it 'Day16: The index of Aunt Sue is 40'                                 do expect(Day16.solve1).to eq(40) end
+  it 'Day16: The index of Aunt Sue with outdated retroencabulator is 241' do expect(Day16.solve2).to eq(241) end
   # it 'Day17: Total permutations of cans is 1304'          do expect(Day17.solve1).to eq(1304) end
   # it 'Day17: Total permutations using fewest cans is 18'  do expect(Day17.solve2).to eq(18) end
   # it 'Day18: Total # of lights on is 821'                           do expect(Day18.solve1).to eq(821) end
