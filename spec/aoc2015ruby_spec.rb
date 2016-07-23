@@ -40,8 +40,8 @@ describe Aoc2015ruby do
   it 'Day16: The index of Aunt Sue with outdated retroencabulator is 241' do expect(Day16.solve2).to eq(241) end
   it 'Day17: Total permutations of cans is 1304'          do expect(Day17.solve1).to eq(1304) end
   it 'Day17: Total permutations using fewest cans is 18'  do expect(Day17.solve2).to eq(18) end
-  # it 'Day18: Total # of lights on is 821'                           do expect(Day18.solve1).to eq(821) end
-  # it 'Day18: Total # of lights on when corners are stuck on is 886' do expect(Day18.solve2).to eq(886) end
+  it 'Day18: Total # of lights on is 821'                           do expect(Day18.solve1).to eq(821) end
+  it 'Day18: Total # of lights on when corners are stuck on is 886' do expect(Day18.solve2).to eq(886) end
   # it 'Day19: Total # of molecules is 509' do expect(Day19.solve1).to eq(509) end
   # it 'Day19: Shortest path is 195'        do expect(Day19.solve2).to eq(195) end
   # it 'Day20: House # is 786240' do expect(Day20.solve1).to eq(786240) end
